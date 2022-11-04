@@ -1,0 +1,16 @@
+@mixin fontSizeWeight($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin medias($size) {
+    @media screen and (min-width: 992px) {
+        font-size: $size;
+    }
+}
+
+@mixin imgWidth($width) {
+    img {
+        width: $width;
+    }
+}

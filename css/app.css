@@ -10984,31 +10984,34 @@ h4, .h4 {
   font-weight: 400;
 }
 
-section:first-of-type {
+#banner {
   background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
   background-position-y: 35%;
   padding-bottom: 17em;
 }
-section:first-of-type p {
+#banner section {
+  background-color: transparent;
+}
+#banner p {
   font-size: 1.2em;
   font-weight: 350;
 }
 
-section:nth-of-type(2) {
+section:nth-of-type(1) {
   background-color: #F5F5F5;
 }
-section:nth-of-type(2) i {
-  font-size: 1.2em;
+section:nth-of-type(1) i {
+  font-size: 2.6em;
 }
 
-section:nth-of-type(3) img {
+section:nth-of-type(2) img {
   width: 7em;
 }
 
-section:nth-of-type(4) img {
+section:nth-of-type(3) img {
   width: 5em;
 }
-section:nth-of-type(4) i {
+section:nth-of-type(3) i {
   font-size: 1.5em;
   color: #FA2859;
 }
@@ -11016,4 +11019,9 @@ section:nth-of-type(4) i {
 footer li {
   list-style: none;
   padding-bottom: 1em;
+}
+@media screen and (min-width: 1200px) {
+  footer p, footer h4, footer .h4 {
+    font-weight: 600;
+  }
 }/*# sourceMappingURL=app.css.map */

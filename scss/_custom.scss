@@ -2,6 +2,7 @@
 $linkHover: #ffe1e8;
 $grigio: #F5F5F5;
 
+// NAV
 .navbar {
     .nav-link {
         color: $secondary;
@@ -22,79 +23,76 @@ $grigio: #F5F5F5;
     }
 }
 
+// HEADERS
 h1 {
-    font-size: 2.75em;
-    font-weight: 300;
-
-    @media screen and (min-width: 992px) {
-        font-size: 3.6em;
-    }
+    @include fontSizeWeight(2.75em, 300);
+    @include medias(3.6em);
 }
 
 h2 {
-    font-size: 2.45em;
-    font-weight: 300;
-
-    @media screen and (min-width: 992px) {
-        font-size: 3.15em;
-    }
+    @include fontSizeWeight(2.45em, 300);
+    @include medias(3.15em);
 }
 
 h3 {
-    font-size: 1.95em;
-    font-weight: 300;
-
-    @media screen and (min-width: 992px) {
-        font-size: 2.3em;
-    }
+    @include fontSizeWeight(1.95em, 300);
+    @include medias(2.3em);
 }
 
 h4 {
-    font-size: 1.4em;
-    font-weight: 400;
+    @include fontSizeWeight(1.4em, 400);
 }
 
-section:first-of-type {
+// SECTIONS
+#banner {
 
     background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
     background-position-y: 35%;
     padding-bottom: 17em;
 
+    section {
+        background-color: transparent;
+    }
+
     p {
-        font-size: 1.2em;
-        font-weight: 350;
+        @include fontSizeWeight(1.2em, 350);
     }
 }
 
-section:nth-of-type(2) {
+section:nth-of-type(1) {
     background-color: $grigio;
 
     i {
-        font-size: 1.2em;
+        font-size: 2.6em;
     }
-    
+
+}
+
+section:nth-of-type(2) {
+
+    @include imgWidth(7em);
 }
 
 section:nth-of-type(3) {
-    img {
-        width: 7em;
-    }
-}
 
-section:nth-of-type(4) {
-    img {
-        width: 5em;
-    }
-    
+    @include imgWidth(5em);
+
     i {
         font-size: 1.5em;
         color: $secondary;
     }
 }
 
+// FOOTER
 footer {
     li {
         list-style: none;
         padding-bottom: 1em;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        p, h4 {
+            font-weight: 600;
+        }
     }
 }

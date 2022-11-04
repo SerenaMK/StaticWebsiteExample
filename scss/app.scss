@@ -2,5 +2,6 @@ $primary: #6610f2;
 $secondary: #FA2859;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../scss/mixin";
 @import "../scss/custom";
 @import "../scss/function";
