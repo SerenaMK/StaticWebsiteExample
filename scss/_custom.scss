@@ -1,0 +1,100 @@
+// COLORI
+$linkHover: #ffe1e8;
+$grigio: #F5F5F5;
+
+.navbar {
+    .nav-link {
+        color: $secondary;
+
+        &:hover {
+            color: $linkHover;
+        }
+    }
+
+    i {
+        font-size: 1.3em;
+    }
+}
+
+.navbar-toggler {
+    &:hover {
+        box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) red;
+    }
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 300;
+
+    @media screen and (min-width: 992px) {
+        font-size: 3.6em;
+    }
+}
+
+h2 {
+    font-size: 2.45em;
+    font-weight: 300;
+
+    @media screen and (min-width: 992px) {
+        font-size: 3.15em;
+    }
+}
+
+h3 {
+    font-size: 1.95em;
+    font-weight: 300;
+
+    @media screen and (min-width: 992px) {
+        font-size: 2.3em;
+    }
+}
+
+h4 {
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+section:first-of-type {
+
+    background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
+    background-position-y: 35%;
+    padding-bottom: 17em;
+
+    p {
+        font-size: 1.2em;
+        font-weight: 350;
+    }
+}
+
+section:nth-of-type(2) {
+    background-color: $grigio;
+
+    i {
+        font-size: 1.2em;
+    }
+    
+}
+
+section:nth-of-type(3) {
+    img {
+        width: 7em;
+    }
+}
+
+section:nth-of-type(4) {
+    img {
+        width: 5em;
+    }
+    
+    i {
+        font-size: 1.5em;
+        color: $secondary;
+    }
+}
+
+footer {
+    li {
+        list-style: none;
+        padding-bottom: 1em;
+    }
+}
