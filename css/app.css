@@ -11015,6 +11015,11 @@ section:nth-of-type(3) i {
   font-size: 1.5em;
   color: #FA2859;
 }
+@media screen and (min-width: 1200px) {
+  section:nth-of-type(3) figcaption {
+    font-weight: 600;
+  }
+}
 
 footer li {
   list-style: none;
